@@ -2,17 +2,16 @@
     padding: 0%;
     margin: 0%;
 }
-/* .navbar{
-    height: 6em;
-} */
+.navbar{
+    height: 5em;
+}
 h3{
     color: #ffffff;
     padding-top: 10px;
-    padding-left: 30px;
     font-family: monospace;
     font-size: x-large;
 }
-h4{
+h5{
     color: #000000;
     padding-right: 20px;
 }
@@ -31,11 +30,8 @@ h4{
 }
 #addBtn{
     width: 50px;
-    height: 36px;
+    height: 35px;
     border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.459);
 }
-#addbtn:hover{
-    background-color: black;
-    color: #fff;
-}
+
