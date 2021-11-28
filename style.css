@@ -3,35 +3,48 @@
     margin: 0%;
 }
 .navbar{
-    height: 5em;
+    height: 10%;
+}
+#bgImg{
+    position: absolute;
 }
 h3{
+    position: relative;
     color: #ffffff;
     padding-top: 10px;
-    font-family: monospace;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: x-large;
 }
 h5{
-    color: #000000;
+    position: relative;
+    color: #ffffff;
     padding-right: 20px;
 }
 .addNew{
+    position: absolute;
     width: 70%;
-    margin-top: 2%;
+    margin-top: 6%;
     vertical-align: middle;
-    padding-left: 33%;
+    padding-left: 30%;
 }
 #addNew{
     width: 70%;
     height: 35px;
-    border: #000000, solid,;
+    /* border: #000000, solid,; */
     border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.459);
+    background-color: rgb(255, 255, 255);
 }
 #addBtn{
     width: 50px;
     height: 35px;
     border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.459);
+    background-color: rgb(255, 255, 255);
+}
+#itemTbl{
+    position: relative;
+    padding-left: 10%;
+    align-self: center;
+    padding-top: 8%;
+
 }
 
