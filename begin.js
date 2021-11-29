@@ -34,9 +34,9 @@ function todoList() {
     if (checkboxes.length == 5) {
       alert(' Congrats! 5 tasks have been successfully completed');
     }
-    else if (checkboxes.length>=5){
-      alert('Congrats! one more task is completed')
-    }
+    // else if (checkboxes.length>=5){
+    //   alert('Congrats! one more task is completed')
+    // }
   
   }
   
