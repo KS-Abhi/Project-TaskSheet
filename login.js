@@ -27,7 +27,7 @@ function validUser(userName,password,validPwd){
   user=true;
   }
   else{
-      usrError.innerText="Invalid UserName";
+      usrError.innerText="Incorrect UserName";
       usrError.style.color="red";
       return false
   }
@@ -46,7 +46,7 @@ function validPwd(pwd){
     }
 
     else{
-        pwdError.innerText="Invalid Password";
+        pwdError.innerText="Incorrect Password";
         pwdError.style.color="red";
     return false;
     }
