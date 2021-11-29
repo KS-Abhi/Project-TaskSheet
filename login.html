@@ -17,13 +17,13 @@
     <form class="loginForm" action="index.html" onsubmit="return validate()">
         <h3>Task Manager</h3>
         <div class="mb-3">
-          <label for="text" class="form-label" oninput="clrUser()">Username</label>
-          <input type="text" class="form-control" id="usrName">
+          <label for="text" class="form-label">Username</label>
+          <input type="text" oninput="clrUser()" class="form-control" id="usrName">
           <label for="error" id="usrError"></label>
         </div>
         <div class="mb-3">
-          <label for="exampleInputPassword1" class="form-label" oninput="clrPwd()">Password</label>
-          <input type="password" class="form-control" id="password">
+          <label for="exampleInputPassword1" class="form-label">Password</label>
+          <input type="password" oninput="clrPwd()" class="form-control" id="password">
           <label for="error" id="pwdError"></label>
         </div>
         <button type="submit" class="btn btn-warning">Login</button>

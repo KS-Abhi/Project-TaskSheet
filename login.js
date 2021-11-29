@@ -16,20 +16,23 @@ function validate(){
         }
             return false;
     }
+    else{
+        return validUser(userName,password,validPwd);
+    }
 }
-//call back user authentication
-function testUser(user,pwd,callBack){
-const strUser="admin";
-let admin,password;
-  if(user.toLowerCase()==strUser){
-  admin=true;
+
+function validUser(userName,password,validPwd){ 
+  let user,pwd;
+  if(userName.value=="admin"){
+  user=true;
   }
   else{
-  document.getElementById("usrError").innerText="Invalid UserName";
-  admin=false;
+      usrError.innerText="Invalid UserName";
+      usrError.style.color="red";
+      return false
   }
-  password=callBack(pwd);
-  if(admin&&password)
+  pwd=validPwd(password);
+  if(user&&pwd)
   return true;
   else
   return false;
@@ -37,23 +40,99 @@ let admin,password;
 
 
 //call backfunction test password n authenticate login
-function testPwd(pwd){
-    const strPwd=12345;
-    if(pwd==strPwd){
+function validPwd(pwd){
+    if(pwd.value==12345){
         return true;
     }
 
     else{
-    document.getElementById("pwdError").innerText="Invalid Password";
+        pwdError.innerText="Invalid Password";
+        pwdError.style.color="red";
     return false;
     }
 } 
 
-function clearUser(){
-    document.getElementById("usrError").innerText="";
+function clrPwd(){
+    pwdError.innerText="";
 }
 
-function clearPwd(){
-    document.getElementById("pwdError").innerText="";
+function clrUser(){
+    usrError.innerText="";
 }
+
+// function validate(){
+
+//     let userName = document.getElementById("usrName");
+//     let password = document.getElementById("password");
+//     let usrError = document.getElementById("usrError");
+//     let pwdError = document.getElementById("pwdError");
+    
+//     if(userName.value == "" || password.value == ""){
+//         if(userName.value == ""){
+//             usrError.innerText = "Enter Username";
+//             usrError.style.color = "red";
+//         }
+
+//         if(password.value == "") {
+//             pwdError.innerText = "Enter Password";
+//             pwdError.style.color = "red";
+//         }
+//             return false;
+//     }
+
+//     else{
+//         return  validUser(userName,password,validPwd);
+    
+//     }
+    
+    
+// }
+
+// function validUser(userName,password,validPwd)
+// {
+//     let user,pwd;
+//     if(userName.value=="admin")
+//     {
+//         user=true;
+//     }
+
+//     else{
+//         usrError.innerText="Invalid Username";
+//         usrError.style.color = "red";
+//         return false;
+//     }
+
+//    pwd= validPwd(password);
+//    if(user&&pwd)
+//    return true;
+//    else
+//    return false;
+
+// }
+
+// function validPwd(pwd)
+// {
+    
+//     if(pwd.value==12345)
+//     {
+//         return true;
+//     }
+
+// else
+// {
+// pwdError.innerText="Invalid Password";
+// pwdError.style.color = "red";
+// return false;
+// }
+// }
+
+// function clrPwd()
+// {
+//     pwdError.innerText="";
+// }
+
+// function clrUser()
+// {
+//     usrError.innerText="";
+// }
 
